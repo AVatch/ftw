@@ -5,8 +5,8 @@ from scrapy.http 		import Request
 from ftw_scrapers.items import Game, Achievement
 
 
-class XboxOneGameListSpider(BaseSpider):
-	name = 'xboxOneGameList'
+class XboxSpider(BaseSpider):
+	name = 'xbox'
 	allowed_domains = ["xboxachievements.com"]
 	start_urls = ["http://www.xboxachievements.com/games/xbox-one/" + str(page) + "/" for page in range(1,10)]
 
