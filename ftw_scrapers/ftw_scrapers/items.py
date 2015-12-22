@@ -2,6 +2,7 @@ import scrapy
 
 
 class Game(scrapy.Item):
+	kind = scrapy.Field() 
     title = scrapy.Field()
     artwork = scrapy.Field()
     achievement_count = scrapy.Field()
@@ -9,6 +10,7 @@ class Game(scrapy.Item):
 
 
 class Achievement(scrapy.Item):
+	kind = scrapy.Field() 
 	game = scrapy.Field()
 	title = scrapy.Field()
 	artwork = scrapy.Field()
